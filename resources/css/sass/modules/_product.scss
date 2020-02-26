@@ -1,0 +1,44 @@
+.product {
+	.image {
+		height: auto;
+	}
+
+	.title {
+		color: #000;
+		font-family: $cormorant-garamond;
+		font-size: 4rem;
+		font-style: italic;
+		font-weight: 500;
+
+		@include lg {
+			font-size: 4.5rem;
+		}
+	}
+
+	.description {
+		font-size: 1.6rem;
+		font-family: $open-sans-font;
+		font-weight: 300;
+
+		@include lg {
+			font-size: 1.7rem;
+		}
+	}
+
+	.price {
+		$value-size: 2rem;
+
+		font-size: 1.5rem;
+		font-family: $merienda-font;
+		color: $brand-color;
+
+		.value {
+			font-size: $value-size;
+			letter-spacing: 2px;
+		}
+
+		.currency {
+			font-size: $value-size;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.list {
+	&-header {
+		&, a {
+			color: #FFF;
+			font-size: 1.4rem;
+			font-weight: 600;
+		}
+
+		li {
+			padding: 5px;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			@include sm {
+				padding: 14px;
+			}
+		}
+	}
+
+	&-social {
+        .list-inline-item {
+            i {
+                font-size: 3rem;
+                color: #000;
+	            margin-right: 10px;
+                transition: all .5s ease;
+
+                &:hover {
+                    color: $brand-color;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

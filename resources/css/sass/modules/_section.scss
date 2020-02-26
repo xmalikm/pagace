@@ -1,0 +1,311 @@
+.section {
+	position: relative;
+	font-size: 1.8rem;
+
+	@include md {
+		font-size: 2.3rem;
+	}
+
+	.title-main {
+		font-size: 5rem;
+		font-family: $cormorant-garamond;
+		font-style: italic;
+		color: $brand-color;
+
+		@include lg {
+			font-size: 7rem;
+		}
+	}
+
+	.title-sup {
+		color: #d93d53;
+		font-size: 9rem;
+		font-family: $niconne-font;
+		line-height: 7rem;
+		opacity: 0.15;
+
+		@include lg {
+			font-size: 14rem;
+			margin-bottom: -10.5rem;
+			line-height: unset;
+		}
+	}
+
+	// ABOUT SECTION
+	&-about {
+		background-image: url("../../resources/css/images/backgrounds/bg-about.png");
+		z-index: decrement($zindex-mask-initial);
+
+		@include lg {
+			height: 100vh;
+		}
+
+		.content {
+			font-family: $cormorant-garamond;
+			font-size: 2.1rem;
+			font-style: italic;
+			font-weight: 300;
+
+			@include lg {
+				font-size: 2.6rem;
+			}
+		}
+	}
+
+	&-products {
+		background-color: #FFF;
+		z-index: decrement($zindex-mask-initial);
+		//background-image: url("../../resources/css/images/bg-products.jpg");
+		//background-position: 50% 50%;
+		//background-repeat: no-repeat;
+		//background-size: cover;
+
+		//&:before {
+        //    content: "";
+        //    background: url("../../resources/css/images/547147222.jpg"), linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,.9) 97%), rgba(0, 0, 0, 0.2);
+        //    top: 0;
+        //    left: 0;
+        //    bottom: 0;
+        //    right: 0;
+        //    position: absolute;
+        //}
+	}
+
+	&-statistics {
+		background-image: url("../../resources/css/images/backgrounds/bg-numbers.webp");
+		z-index: decrement($zindex-mask-initial);
+
+		&:before {
+            content: "";
+			background: rgba(33,39,57,.4);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+
+		@include lg {
+			height: 70vh;
+		}
+
+		.icon {
+			width: 120px;
+			height: 75px;
+		}
+
+		.numbers {
+			font-size: 4.5rem;
+			font-weight: 600;
+			color: #FFF;
+
+			.counter {
+				letter-spacing: 3px;
+			}
+		}
+
+		.text {
+			color: #FFF;
+			font-family: $libre-font;
+			font-style: italic;
+			font-weight: 700;
+			letter-spacing: 2px;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+
+			.highlight {
+				font-size: 3rem;
+				font-weight: 700;
+				color: #d93d53;
+			}
+		}
+	}
+
+	&-price-list {
+		background-image: url('../../resources/css/images/backgrounds/bg-price-list.png');
+		background-size: cover;
+		background-position: 0% 50%;
+		z-index: decrement($zindex-mask-initial);
+
+		@include lg {
+			height: 100vh;
+			background-position: 50% 50%;
+		}
+
+		.price-list {
+			.price-list-item {
+				margin-top: 20px;
+
+				&:hover .image img {
+					transform: scale(1.3);
+				}
+
+				@include lg {
+					margin-top: 40px;
+				}
+
+				.image {
+					width: 80px;
+					height: 80px;
+					border-radius: 50%;
+					box-shadow: 2px 2px 10px 2px #c3c3c3;
+					overflow: hidden;
+
+					@include lg {
+						width: 120px;
+						height: 120px;
+					}
+
+					img {
+						width: 100%;
+						height: 100%;
+						transition: transform .5s ease;
+					}
+				}
+
+				.media-body {
+					position: relative;
+				}
+
+				.title {
+					position: relative;
+					display: flex;
+					flex: 1;
+					color: #000;
+					font-family: $cormorant-garamond;
+					font-size: 3rem;
+					font-style: italic;
+					font-weight: 500;
+
+					&:after {
+						content: '';
+						flex: 1;
+						align-self: center;
+						margin-left: 6px;
+						margin-top: 5px;
+						border-bottom: dashed 1px #d0d0d0;
+
+						@include lg {
+							margin-left: 12px;
+						}
+					}
+
+					@include lg {
+						font-size: 4rem;
+					}
+				}
+
+				.price {
+					flex: 0 0 4em;
+					position: relative;
+					font-style: italic;
+					font-family: $merienda-font;
+					font-size: 1.9rem;
+					color: #d93d53;
+					letter-spacing: 3px;
+
+					&:after {
+						content: '€';
+					}
+
+					@include lg {
+						font-size: 2.8rem;
+					}
+				}
+
+				.description {
+					font-size: 1.6rem;
+
+					@include lg {
+						font-size: 1.7rem;
+						padding-right: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	&-reviews {
+		background-image: url('../../resources/css/images/backgrounds/bg-testimonials.png');
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		z-index: decrement($zindex-mask-initial);
+
+		@include lg {
+			height: 70vh;
+		}
+
+		&:before {
+            content: "";
+			background: rgba(33,39,57,.4);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+
+		.title-main {
+			color: #FFF;
+		}
+
+		.title-sup {
+			color: #FFF;
+			opacity: 0.25;
+		}
+	}
+
+	&-gallery {
+		background-image: url('../../resources/css/images/backgrounds/bg-gallery.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		z-index: decrement($zindex-mask-initial);
+	}
+
+	&-order-form {
+		background-image: url('../../resources/css/images/backgrounds/bg-order.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		z-index: decrement($zindex-mask-initial);
+
+		.title-main {
+			color: #FFF;
+		}
+
+		.title-sup {
+			color: #FFF;
+			opacity: 0.25;
+		}
+
+		.form-modal {
+			color: #FFF;
+			font-family: $merienda-font;
+
+			.text {
+				font-family: $open-sans-font;
+				font-size: 1.7rem;
+				font-weight: 400;
+				color: #8e8e8e;
+				border-bottom: 2px solid #5f5f5f;
+			}
+
+			.form-row {
+				margin-bottom: 1rem;
+			}
+
+			.form-check-label {
+				font-size: 1.5rem;
+				font-family: $open-sans-font;
+				vertical-align: top;
+			}
+
+			button {
+				font-size: 2.2rem;
+				padding: 1.5rem;
+			}
+		}
+	}
+}

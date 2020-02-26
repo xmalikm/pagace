@@ -1,0 +1,14 @@
+.bt-none {
+	border-top: none !important;
+}
+.bb-none {
+	border-bottom: none !important;
+}
+
+.divider-decor {
+	width: 7rem;
+
+	@include lg {
+		width: 14rem;
+	}
+}

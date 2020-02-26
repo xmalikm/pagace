@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 100%;
+    color: $text-color;
+    background: $background-color;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    @include on-event {
+        color: $link-hover-color;
+        text-decoration: underline;
+    }
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

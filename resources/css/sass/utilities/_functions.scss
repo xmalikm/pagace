@@ -1,0 +1,4 @@
+@function decrement($value) {
+	$zindex-mask-initial: $value - 1 !global;
+	@return $zindex-mask-initial;
+}

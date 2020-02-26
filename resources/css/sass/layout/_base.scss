@@ -1,0 +1,28 @@
+header {
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+
+.l-mask {
+	-webkit-mask-image: url("../../resources/css/images/shape_wave.svg");
+	-webkit-mask-position: bottom;
+	-webkit-mask-size: 100rem;
+	-webkit-mask-repeat: no-repeat;
+	margin-bottom: -40px;
+
+	@include lg {
+		-webkit-mask-size: 150%;
+	}
+}
+
+footer {
+	.footer-primary {
+		background-image: url('../../resources/css/images/backgrounds/37640-O1K0LH.png');
+		background-size: contain;
+	}
+
+	.footer-secondary {
+
+	}
+}

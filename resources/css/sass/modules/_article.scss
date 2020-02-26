@@ -1,0 +1,13 @@
+.article {
+	&-footer {
+		.title {
+			font-family: $merienda-font;
+			font-style: italic;
+		}
+
+		.icon {
+			font-size: 1.7rem;
+			margin-right: 10px;
+		}
+	}
+}

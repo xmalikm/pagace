@@ -1,0 +1,30 @@
+/* FONTS */
+$merienda-font: 'Merienda', serif;
+$open-sans-font: 'Open Sans', serif;
+$libre-font: 'Libre Baskerville', serif;
+$niconne-font: 'Italianno', cursive;
+$cormorant-garamond: 'Cormorant Garamond', serif;
+$dancing-script-font: 'Dancing Script', cursive;
+$cormorant-font: 'Cormorant', serif;
+
+/* COLORS */
+$brand-color: #d93d53d6;
+$text-color: #666;
+$link-color: #ff1a98;
+$link-hover-color: darken($link-color, 20%);
+$background-color: #FFF;
+
+/* RESPONSIVE BREAKPOINTS */
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+$zindex-mask-initial: 20;

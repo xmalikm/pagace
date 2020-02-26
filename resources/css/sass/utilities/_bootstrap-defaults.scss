@@ -1,0 +1,15 @@
+/* BOOTSTRAP OVERRIDES */
+$font-family-base: $open-sans-font;
+$font-size-base: 1.6rem;
+$spacer: 1.6rem;
+$spacer-custom: 0.1rem; // 0.1rem = 1px
+$theme-colors: ('pink' : #d93d53d6);
+
+$spacers: (
+	0: 0
+);
+@for $i from 1 through 150 {
+	$spacers: map-merge($spacers, (
+		$i: ($i * $spacer-custom)
+	));
+}

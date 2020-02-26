@@ -1,0 +1,6 @@
+.btn {
+	&-pink {
+		//@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+		@include button-size(1.1rem, 1.1rem, 1.5rem, 1.5rem, 20px);
+	}
+}
