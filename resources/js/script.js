@@ -1,4 +1,20 @@
 $(document).ready(function() {
+	// page sections scrolling
+	$(".navbar a[href^='#'], .scroll-link").on('click', function(event) {
+        // make sure this.hash has a value
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            // smooth scrolling animation
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 1300, 'swing', function(){
+                    window.location.hash = hash;
+            });
+        }
+    });
+
     let welcomeCarousel = $('#mainCarousel');
     // let welcomeCarouselInterval = 10000;
     let welcomeCarouselInterval = 10000000;

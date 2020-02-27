@@ -62291,6 +62291,13 @@ footer .footer-primary {
   background-image: url("../../resources/css/images/backgrounds/37640-O1K0LH.png");
   background-size: contain;
 }
+footer .footer-secondary {
+  font-size: 1.3rem;
+}
+footer .footer-secondary a {
+  color: #FFF;
+}
+
 .article-footer .title {
   font-family: "Merienda", serif;
   font-style: italic;
