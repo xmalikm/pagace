@@ -16,8 +16,7 @@ $(document).ready(function() {
     });
 
     let welcomeCarousel = $('#mainCarousel');
-    // let welcomeCarouselInterval = 10000;
-    let welcomeCarouselInterval = 10000000;
+    let welcomeCarouselInterval = 10000;
 
     function toggleCaption() {
         let caption = welcomeCarousel.find('.active').find('.carousel-caption');
@@ -68,4 +67,5 @@ $(document).ready(function() {
 	L.tileLayer('https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png', {
 	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
+	L.marker([48.1566336,17.1255593]).addTo(map);
 });
