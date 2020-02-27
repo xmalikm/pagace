@@ -45,7 +45,10 @@ $(document).ready(function() {
 	});
 
 	// open street maps
-	var map = L.map('map-footer', { zoomControl: false }).setView([48.1566336,17.1255593], 12.5);
+	var map = L.map('map-footer', {
+		zoomControl: false,
+		dragging: false,
+	}).setView([48.1566336,17.1255593], 12.5);
 	L.tileLayer('https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png', {
 	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
